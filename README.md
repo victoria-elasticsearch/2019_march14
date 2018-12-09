@@ -11,6 +11,11 @@ APM with Elasticsearch
 
 The default configuration is stored in apm/config/apm-server.yml.
 
+elastic search host and port are setup in the .env config file and overident in the docker build.
+
+In kibana go to APM > setup instructions
+Click Check APM Server Status to validate setup of the apm server
+
 
 
 

@@ -2,17 +2,16 @@ version: '3.5'
 
 services:
 
-  apm:
+  apm-server:
     build:
-      context: apm/
+      context: apm-server/
       args:
         ELK_VERSION: $ELK_VERSION
+        ES_HOST: $ES_HOST
     ports:
       - "8200:8200"
     networks:
       - apm
-
 networks:
-
   apm:
     driver: bridge
