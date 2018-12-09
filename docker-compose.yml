@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+
+  apm:
+    build:
+      context: apm/
+      args:
+        ELK_VERSION: $ELK_VERSION
+    ports:
+      - "8200:8200"
+    networks:
+      - apm
+
+networks:
+
+  apm:
+    driver: bridge
