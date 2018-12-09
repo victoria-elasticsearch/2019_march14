@@ -9,6 +9,4 @@ queue.mem.events: 4096
 max_procs: 4
 
 output.elasticsearch:
-  hosts: ["https://localhost:9200"]
-  username: "apm-server_internal"
-  password: "YOUR_PASSWORD"
+  hosts: ["http://{{es_host}}:{{es_port}}"]
